@@ -16,10 +16,10 @@ Answer: select Population, LifeExpectancy from country where Code='ARG'; - popul
 Answer: select Name, LifeExpectancy from country where LifeExpectancy is not null order by LifeExpectancy desc limit 1; - name: Andorra; life expectancy 83.5
 
 
-~~4. Using JOIN ... ON, find the capital city of Spain.
+~~4. Using JOIN ... ON, find the capital city of Spain.~~
 
 
-~~5. Using JOIN ... ON, list all the languages spoken in the Southeast Asia region.
+~~5. Using JOIN ... ON, list all the languages spoken in the Southeast Asia region.~~
 
 
 6. Using a single query, list 25 cities around the world that start with the letter F.
@@ -27,7 +27,7 @@ Answer: select Name, LifeExpectancy from country where LifeExpectancy is not nul
 Answer: select Name from city where name like 'F%' limit 25 - Fagatogo; Florencio Varela; Formosa; Francistown; Fortaleza; Feira de Santana; Franca; Florianopolis; Foz do Iguacu; Ferraz de Vasconcelos; Francisco Morato; Franco da Rocha; Fuenlabrada; Faridabad; Firozabad; Farrukhabad-cum-Fatehgarh; Faizabad; Fatehpur; Firenze; Foggia; Ferrara; Forli; Fukuoka; Funabashi; Fukuyama
 
 
-~~7. Using COUNT and JOIN ... ON, get the number of cities in China.
+~~7. Using COUNT and JOIN ... ON, get the number of cities in China.~~
 
 
 8. Using IS NOT NULL, ORDER BY, and LIMIT, which country has the lowest population? Discard non-zero populations.
@@ -35,7 +35,7 @@ Answer: select Name from city where name like 'F%' limit 25 - Fagatogo; Florenci
 Answer: select name, population from country where population is not null limit 1; - name: Aruba; population: 103000
 
 
-~~9. Using aggregate functions, return the number of countries the database contains.
+~~9. Using aggregate functions, return the number of countries the database contains.~~
 
 
 10. What are the top ten largest countries by area?
@@ -48,10 +48,10 @@ Answer: select name, surfacearea from country order by surfacearea desc limit 10
 Answer: select name from city where countrycode='JPN' order by population desc limit 5; - Tokyo, Jokohama [Yokohama], Osaka, Nagoya, Sapporo
 
 
-~~12. List the names and country codes of every country with Elizabeth II as its Head of State. You will need to fix the mistake first!
+~~12. List the names and country codes of every country with Elizabeth II as its Head of State. You will need to fix the mistake first!~~
 
 
-~~13. List the top ten countries with the smallest population-to-area ratio. Discard any countries with a ratio of 0.
+~~13. List the top ten countries with the smallest population-to-area ratio. Discard any countries with a ratio of 0.~~
 
 
 14. List every unique world language.
@@ -68,7 +68,7 @@ Answer: select name, gnp from country order by gnp desc limit 10; - name: United
 Hint: country and countrylanguage tables, JOIN the two together (check notes), SELECT and shrink from there
 
 
-~~17. List every country where over 50% of its population can speak German.
+~~17. List every country where over 50% of its population can speak German.~~
 
 
 18. Which country has the worst life expectancy? Discard zero or null values.
@@ -81,4 +81,4 @@ Answer: select name from country where lifeexpectancy is not null limit 1; - Aru
 Answer: 
 
 
-~~20. How many countries have gained independence since records began?
+~~20. How many countries have gained independence since records began?~~
